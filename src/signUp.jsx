@@ -1,4 +1,4 @@
-import { MDBContainer, MDBCol, MDBAlert  } from "mdb-react-ui-kit";
+import { MDBContainer, MDBCol, MDBRow  } from "mdb-react-ui-kit";
 import { useState } from "react";
 import axios from "axios";
 import bcground from "./images/image.png";
@@ -32,9 +32,8 @@ export default function SignUp() {
       style={{ height: "100vh", backgroundColor: "white", padding: "0" }}
     >
       <MDBCol
-        md="6"
-        className="align-items-center justify-content-center"
-        style={{ backgroundColor: "#fff", padding: "40px", height: "100%" }}
+        className="align-items-center"
+        style={{ backgroundColor: "#fff", padding: "0 40px"}}
       >
         <h1 className="appLogo">THE APP</h1>
         <MDBContainer fluid className="outer">
@@ -80,6 +79,7 @@ export default function SignUp() {
             <span>Do you have an account? <a href="/login">Log in</a></span>
           </p>
         </MDBContainer>
+        
       </MDBCol>
       <MDBCol>
         <img

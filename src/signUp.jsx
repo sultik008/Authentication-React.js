@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import bcground from "./images/image.png";
 import { registerUser , saveToken  } from "./queries";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 import "./login.css";
 
 export default function SignUp() {
@@ -76,7 +76,7 @@ export default function SignUp() {
             <button data-mdb-ripple-init type="submit" className="btn btn-primary btn-block">Sign up</button>
           </form>
           <p className="linkSignorLog">
-            <span>Do you have an account? <a href="/login">Log in</a></span>
+            <span>Do you have an account? <Link to="/login">Log in</Link></span>
           </p>
         </MDBContainer>
         

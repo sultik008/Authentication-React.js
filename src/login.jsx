@@ -2,7 +2,7 @@ import { MDBContainer, MDBCol } from "mdb-react-ui-kit";
 import bcground from "./images/image.png";
 import axios from "axios";
 import { loginUser , saveToken } from "./queries";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./login.css";
 import { useState } from "react";
 
@@ -101,9 +101,9 @@ export default function LogIn() {
           </form>
           <p className="linkSignorLog">
             <span>
-              Dont have an account? <a href="/signup">Sign up</a>
+              Dont have an account? <Link  to="/signup">Sign up</Link>
             </span>
-            <a href="/forgot">Forgot password?</a>
+            <Link to="/forgot">Forgot password?</Link>
           </p>
         </MDBContainer>
       </MDBCol>

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:5000/api";
+const url = "https://authentication-express-js.onrender.com/api";
 
 export async function getUsers() {
   try {

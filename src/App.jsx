@@ -5,18 +5,18 @@ import ForgotPassword from "./forgotPassword.jsx";
 import MainPage from './MainPage.jsx'
 import LogIn from "./login.jsx";
 import SignUp from "./signUp.jsx";
-import { BrowserRouter , Routes , Route} from 'react-router-dom'
+import { Router , Routes , Route} from 'react-router-dom'
 
 function App() {
  return(
- <BrowserRouter >
+ <Router >
   <Routes>
     <Route path="/login" element={<LogIn />} ></Route>
     <Route path="/signup" element={<SignUp/>}></Route>
     <Route path="/" element={<MainPage/>}></Route>
     <Route path="/forgot" element={<ForgotPassword/>}></Route>
   </Routes>
- </BrowserRouter>
+ </Router>
  )
 }
 
